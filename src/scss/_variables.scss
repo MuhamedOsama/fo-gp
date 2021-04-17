@@ -1,0 +1,71 @@
+//Global Variables
+
+$primary: #2e3192;
+$secondary: #1ad0a6;
+$auxiliary: #3cf1b8;
+$successes: #1ad0a6;
+$error: #ed1b24;
+$warning: #f49d37;
+$bright: #ffffff;
+$shade: #090a1d;
+$tint: #eaeaf4;
+$dark: #090a1d;
+// Fonts
+
+@font-face {
+   font-family: 'Proxima Nova b';
+   src: url('../assets/fonts/EN/ProximaNova-Bold.woff2') format('woff2'),
+      url('../assets/fonts/EN/ProximaNova-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Proxima Nova Th';
+   src: url('../assets/fonts/EN/ProximaNovaT-Thin.woff2') format('woff2'),
+      url('../assets/fonts/EN/ProximaNovaT-Thin.woff') format('woff');
+   font-weight: 100;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Proxima Nova Rg';
+   src: url('../assets/fonts/EN/ProximaNova-Regular.woff2') format('woff2'),
+      url('../assets/fonts/EN/ProximaNova-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
+
+//Bootstrap Modification
+
+$font-weight-light: 'Proxima Nova Th';
+$font-weight-normal: 'Proxima Nova Rg';
+$font-weight-bold: 'Proxima Nova b';
+
+$font-weight-base: $font-weight-normal !default;
+$font-family-base: 'Proxima Nova Rg' !default;
+
+$theme-colors: (
+   'primary': $primary,
+   'secondary': $secondary,
+   'auxiliary': $auxiliary,
+   'successes': $successes,
+   'error': $error,
+   'warning': $warning,
+   'bright': $bright,
+   'shade': $shade,
+   'tint': $tint,
+);
+$input-focus-border-color: $secondary;
+$input-btn-focus-color: lighten($secondary, 35%);
+$card-border-radius: 8px;
+$input-border-color: #eaeaf4;
+$box-shadow: 0 4px 8px 0 rgba(44, 39, 56, 0.04);
+$input-height-lg: 52px;
+$info: #1ad0a6;
+$input-color: #090a1d;

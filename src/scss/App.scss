@@ -1,0 +1,51 @@
+@import './variables.scss';
+@import './bootstrap.scss';
+@import './Mixins.scss';
+@import './animations';
+html,
+body {
+   font-family: 'Proxima Nova Rg', Arial, Helvetica, sans-serif;
+   width: 100%;
+   height: 100%;
+   margin: 0px;
+   padding: 0px;
+   overflow-x: hidden;
+}
+
+.thin {
+   font-family: 'Proxima Nova Th';
+}
+.reg {
+   font-family: 'Proxima Nova Rg';
+}
+
+.bold {
+   font-family: 'Proxima Nova b';
+}
+
+.ar {
+   @include arabicFont;
+}
+
+.surroundingLine {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #eaeaf4;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+
+   span {
+      color: #2c2738;
+      background: #fff;
+      padding: 0 10px;
+   }
+}
+.pointer {
+   cursor: pointer;
+}
+.transition {
+   @include addTransition;
+}
+.transitionSlow {
+   transition: 0.7s;
+}

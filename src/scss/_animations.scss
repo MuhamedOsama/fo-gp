@@ -1,0 +1,55 @@
+@mixin transitionAndTransform($t1, $t2) {
+   transition: opacity $t1, transform $t2;
+}
+.switch-enter {
+   opacity: 0;
+   transform: scale(0.9);
+}
+.switch-enter-active {
+   opacity: 1;
+   transform: translateX(0);
+   @include transitionAndTransform(300ms, 300ms);
+}
+.switch-exit {
+   opacity: 0;
+   transform: scale(0.9);
+}
+.switch-exit-active {
+   opacity: 1;
+   transform: translateX(0);
+   @include transitionAndTransform(300ms, 300ms);
+}
+
+.moveX-appear {
+   opacity: 0;
+   transform: translateX(-100%);
+}
+.moveX-appear-active {
+   opacity: 1;
+   transform: translateX(0%);
+   @include transitionAndTransform(500ms, 500ms);
+}
+.moveX-exit {
+   opacity: 1;
+   transform: translateX(0%);
+   @include transitionAndTransform(500ms, 500ms);
+}
+.moveX-exit-active {
+   opacity: 0;
+   transform: translateX(100%);
+}
+
+.dialog-enter {
+   left: -100%;
+   transition: left 300ms linear;
+}
+.dialog-enter-active {
+   left: 0;
+}
+.dialog-exit {
+   left: 0;
+   transition: left 300ms linear;
+}
+.dialog-exit-active {
+   left: -100%;
+}

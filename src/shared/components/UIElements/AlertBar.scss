@@ -1,0 +1,49 @@
+@import '../../../scss/variables.scss';
+.alert {
+   height: 60px;
+   border-radius: $card-border-radius !important;
+   box-shadow: 0 24px 48px 0 rgba(44, 39, 56, 0.08);
+   padding: 18px 16px 0 24px;
+   width: 30vw;
+   position: absolute;
+   top: 1rem;
+   left: 1rem;
+}
+@media (max-width: 800px) {
+   .alert {
+      padding: 1rem;
+
+      left: -20;
+      width: 90vw;
+   }
+}
+.alert-error::before {
+   content: '';
+   position: absolute;
+   left: 0.5%;
+   bottom: 0;
+   height: 4px;
+   background-color: #ed1b2642;
+   width: 99%;
+   box-sizing: border-box;
+   z-index: 11;
+   animation: hideMeter 6s linear;
+}
+.alert-success::before {
+   content: '';
+   position: absolute;
+   left: 0.5%;
+   bottom: 0;
+   height: 4px;
+   background-color: #1ad0a6;
+   width: 99%;
+   box-sizing: border-box;
+   z-index: 11;
+   animation: hideMeter 6s linear;
+}
+
+.alert-card {
+   position: absolute;
+
+   z-index: 10000;
+}

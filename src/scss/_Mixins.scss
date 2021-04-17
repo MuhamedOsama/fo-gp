@@ -1,0 +1,11 @@
+@mixin addOpacity {
+   opacity: 0.4;
+}
+@mixin arabicFont {
+   font-family: 'Almarai', sans-serif;
+   direction: rtl;
+   text-align: right;
+}
+@mixin addTransition {
+   transition: 0.25s;
+}

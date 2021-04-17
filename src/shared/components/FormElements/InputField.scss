@@ -1,0 +1,21 @@
+@import '../../../scss/variables';
+
+.formLabel {
+   color: '#090a1d';
+   font-size: 16px;
+}
+.input-group input {
+   transition: 0.3s !important;
+}
+.inputFiled {
+   margin-bottom: 12px;
+}
+.inputControl {
+   padding: 1.4rem 1rem;
+}
+.inputControl::placeholder {
+   opacity: 0.3;
+}
+.addon {
+   background-color: #eaeaf4;
+}
